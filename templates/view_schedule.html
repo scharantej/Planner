@@ -1,0 +1,16 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>View Schedule</title>
+</head>
+<body>
+<h1>View Schedule</h1>
+<p>{{ schedule }}</p>
+<a href="{{ url_for('edit_schedule', schedule_id=loop.index) }}">Edit</a>
+<a href="{{ url_for('delete_schedule', schedule_id=loop.index) }}">Delete</a>
+</body>
+</html>
+
+
